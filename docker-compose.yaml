@@ -1,0 +1,10 @@
+name: subtitle-demo
+services:
+    subtitle-demo:
+        container_name: subtitle
+        devices:
+            - /dev/dri
+            - /dev/snd
+        volumes:
+            - /var/run/user/0/wayland-1:/var/run/user/0/wayland-1
+        image: sergioprado/subtitle-demo:arm64-1.0
